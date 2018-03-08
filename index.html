@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>HTML5 Media Device Access</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="vendor/icon.css">
+  <link type='text/css' rel='stylesheet' href='vendor/material.blue-deep_orange.min.css' />
+  <link type='text/css' rel='stylesheet' href='main.css' />
+</head>
+
+<body>
+
+  <div class=" mdl-layout mdl-js-layout has-drawer is-upgraded">
+    <main class="mdl-layout__content page-wrapper">
+
+      <h2>Face detection demo</h2>
+      <h5>Demonstrates extraction of image from camera, and use of jquery.facedetection to extract individual images from the camera snapshot.</h5>
+
+      <br/>
+      <video id='my-video' autoplay></video>
+      <br/><br/>
+      <button id='extract-faces' class='mdl-button mdl-js-button mdl-button--raised mdl-button--colored'>Extract Faces</button>
+      <br/><br/>
+      <div id='faces'></div>
+
+      <script type='text/javascript' src='vendor/material.min.js'></script>
+      <script type='text/javascript' src='vendor/jquery.min.js'></script>
+      <script type='text/javascript' src='vendor/jquery.facedetection.min.js'></script>
+
+      <script type='text/javascript' src='image-capture-test.js'></script>
+      <script type='text/javascript' src='index.js'></script>
+    </main>
+  </div>
+</body>
+
+</html>
